@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap");
+.container {
+  background: url(hotell.jpg) no-repeat;
+  position: absolute;
+  margin: 80px 60px 0 275px;
+  border-radius: 15px;
+  box-shadow: 0 0 0 3px black, 0 0 0 6px white;
+  padding: 20px;
+  font: 1.2em;
+  background-size: cover;
+  height: 500px;
+}
+
+.container .navbar {
+  width: 100%;
+  height: 80px;
+  background: rgb(182, 205, 214);
+  opacity: 0.4;
+  border-radius: 50px;
+}
+body {
+  background-image: url(ali.jpg);
+  background-size: 60%;
+}
+
+.navbar ul {
+  float: right;
+  margin-right: 175px;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 8px;
+  line-height: 60px;
+}
+.navbar ul li a {
+  color: rgb(63, 63, 63);
+  text-decoration: none;
+  font-size: 30px;
+  padding: 10px 15px;
+  font-family: Beau Rivage;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+.container.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+  user-select: none;
+}
+.center h1 {
+  color: rgb(137, 132, 132);
+  font-size: 70px;
+  font-weight: bold;
+  width: 900px;
+  text-align: center;
+}
+.center .container {
+  width: 200px;
+  height: 25px;
+  overflow: hidden;
+  position: static;
+  background-color: rgb(94, 93, 93);
+  background-image: none;
+  color: papayawhip;
+  font-family: "Amiri", serif;
+  margin: auto;
+  cursor: pointer;
+}
+.container span {
+  font-size: 35px;
+  position: absolute;
+  margin: auto;
+  animation: animasyon 10s ease-in-out infinite;
+  animation-fill-mode: backwards;
+  transform: translateY(-100px);
+  opacity: 0;
+}
+.container span:nth-child(2) {
+  animation-delay: 3s;
+}
+.container span:nth-child(3) {
+  animation-delay: 6s;
+}
+@keyframes animasyon {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  5% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  30% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+}
